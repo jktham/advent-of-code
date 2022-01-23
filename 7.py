@@ -3,15 +3,13 @@ with open(r".\data\7.txt") as file:
 
 data = [int(num) for num in data.split(",")]
 
-average = sum(data)/len(data)
-
 # part 1
 def linearCost(data):
     fuel = []
     for i in range(max(data)):
         cost = 0
         for j in range(len(data)):
-            cost += abs(i - data[j])
+            cost += abs(i-data[j])
         fuel.append(cost)
     return min(fuel)
 
@@ -23,7 +21,7 @@ def gaussCost(data):
     for i in range(max(data)):
         cost = 0
         for j in range(len(data)):
-            cost += int(abs(i - data[j])*(abs(i - data[j])+1)/2)
+            cost += int(abs(i-data[j])*(abs(i-data[j])+1)/2)
         fuel.append(cost)
     return min(fuel)
 
