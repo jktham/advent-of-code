@@ -1,5 +1,3 @@
-import copy
-
 with open(r".\data\4.txt") as file:
     data = file.read()
 
