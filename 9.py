@@ -1,6 +1,3 @@
-from numpy import size
-
-
 with open(r".\data\9.txt") as file:
     data = file.read()
 
