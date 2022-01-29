@@ -30,7 +30,7 @@ for i in range(len(data[0])):
     for j in range(len(data)):
         if len(o2_data) == 1:
             break
-        elif data[j][i] == most_common_bits[i] and data[j] in o2_data:
+        elif data[j][i] != most_common_bits[i] and data[j] in o2_data:
             o2_data.remove(data[j])
 o2_rating = int(o2_data[0], 2)
 
@@ -40,7 +40,7 @@ for i in range(len(data[0])):
     for j in range(len(data)):
         if len(co2_data) == 1:
             break
-        elif data[j][i] != most_common_bits[i] and data[j] in co2_data:
+        elif data[j][i] == most_common_bits[i] and data[j] in co2_data:
             co2_data.remove(data[j])
 co2_rating = int(co2_data[0], 2)
 
