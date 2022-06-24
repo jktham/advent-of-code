@@ -1,4 +1,4 @@
-with open(r".\data\6.txt") as file:
+with open(r".\data\06.txt") as file:
     data = file.read()
 
 data = [int(num) for num in data.split(",")]

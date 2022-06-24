@@ -1,4 +1,4 @@
-with open(r".\data\1.txt") as file:
+with open(r".\data\01.txt") as file:
     data = file.read()
 
 data = data.split("\n")

@@ -1,4 +1,4 @@
-with open(r".\data\8.txt") as file:
+with open(r".\data\08.txt") as file:
     data = file.read()
 
 data = [[[set(word) for word in cell.split(" ")] for cell in row.split(" | ")] for row in data.split("\n")]
